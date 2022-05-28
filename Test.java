@@ -13,4 +13,12 @@ public class Test {
     public void speak(){
 
     }
+
+    public void say(){
+
+    }
+
+    public void see(){
+
+    }
 }
