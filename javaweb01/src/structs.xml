@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- 指定 Struts2 配置文件的 DTD 信息 -->
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<!-- Struts2配置文件的根元素 -->
+<struts>
+
+    <constant name="structs.i18n.encoding" value="UTF-8"></constant>
+    <!-- Struts2的Action必须放在指定的包空间下定义 -->
+    <package name="hello" namespace="/action" extends="struts-default">
+        <!-- 定义 action，该 action 对应的类为 com.mengma.action.HelloWorldAction 类-->
+        <action name="helloWorld" class="action.HelloWorldAction">
+            <!-- 定义处理结果和视图资源之间的映射关系 -->
+            <result name="success">/index.jsp</result>
+        </action>
+    </package>
+</struts>
